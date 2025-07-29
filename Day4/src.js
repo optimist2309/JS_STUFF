@@ -54,5 +54,28 @@ let birthYear = "2000";
 let convertedbirthYear = Number(birthYear);
 console.log(birthYear, convertedbirthYear); // Output: "2000" 2000
 
+// Equality check example
+// Loose equality check
+// This checks value only, not type.
+// Converts operands to the same type before comparing.
+let value1 = "5";   
+let value2 = 5;
+if (value1 == value2) {
+    console.log("Values are equal (loose equality).");
+}else {
+    console.log("Values are not equal (loose equality).");
+}
+
+// Strict equality check
+// This checks both value and type.
+let value3 = 5;
+let value4 = 5; 
+
+if (value3 === value4) {
+    console.log("Values are equal (strict equality).");
+}else {
+    console.log("Values are not equal (strict equality).");
+}
+
 
 
