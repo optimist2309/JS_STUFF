@@ -42,3 +42,17 @@ console.log("Negative number");
 } else {
 console.log("Zero");
 }
+
+// Type conversion example
+// Converting a string to a number.
+let strNum = "123"; 
+let convertedNum = Number(strNum);
+console.log(strNum,convertedNum); // Output: "123" 123
+
+// String to number conversion.
+let birthYear = "2000";
+let convertedbirthYear = Number(birthYear);
+console.log(birthYear, convertedbirthYear); // Output: "2000" 2000
+
+
+
