@@ -81,5 +81,29 @@ console.log("Power:", resultPower);
     console.log("This is an IIFE");
 })();   
 
+// Returning Multiple Values
+// Functions can return multiple values using an array or an object.
+function multiple_returns(a, b) {
+    return [a + b, a - b, a * b, a / b];
+}
+
+const multipleResults = multiple_returns(10, 5);
+console.log("Multiple Results:", multipleResults);
+
+// Function calling another Function
+function calculate(a, b) {
+    const sum = add(a, b);
+    const diff = subtract(a, b);
+    return { sum, diff };
+}   
+const calculations = calculate(20, 10);
+console.log("Calculations:", calculations);
+
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const scoreDolphins  = calcAverage(44,23,71);
+
+console.log(scoreDolphins);
+
 
 
