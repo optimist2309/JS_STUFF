@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation !! </title>
+    </head>
+
+<body style="background-color: #e90707; font-family: Arial, sans-serif; color: #333;">
+<button
+    id="wowBtn"
+    style="
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .95rem 1.25rem;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: .3px;
+      color: #0b0e1c;
+      background: linear-gradient(135deg, #7CF4FF, #7b61ff);
+      box-shadow:
+        0 10px 25px rgba(123,97,255,.35),
+        inset 0 -3px 8px rgba(0,0,0,.15),
+        inset 0 2px 8px rgba(255,255,255,.35);
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+      outline: none;
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+    "
+    onmouseover="this.style.transform='translateY(-2px) scale(1.02)'; this.style.boxShadow='0 14px 30px rgba(123,97,255,.5), inset 0 -4px 10px rgba(0,0,0,.15), inset 0 3px 10px rgba(255,255,255,.4)'; this.style.filter='saturate(1.1)';"
+    onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 25px rgba(123,97,255,.35), inset 0 -3px 8px rgba(0,0,0,.15), inset 0 2px 8px rgba(255,255,255,.35)'; this.style.filter='none';"
+    onclick="addRipple(event)"
+  >
+  <span
+      style="
+        display:inline-block;
+        width: 1.15rem;
+        height: 1.15rem;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #fff 0%, rgba(255,255,255,.55) 40%, rgba(255,255,255,0) 65%);
+        box-shadow: 0 0 18px rgba(255,255,255,.7);
+      "
+    ></span>
+    <span style="position:relative; z-index:1; color:#0b0e1c;">Click to Change web page color 🚀</span>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
+    
